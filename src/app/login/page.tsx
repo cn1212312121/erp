@@ -1,9 +1,13 @@
+"use client"
 import TitleText from "@/components/TitleText";
 import partRoute from "@/utils/partRoute";
 import Link from "next/link";
 import React from "react";
 
 const LoginPage = () => {
+  const login = () => {
+    alert("Login success");
+  }
   return (
     <div>
       <form action="">
@@ -19,7 +23,7 @@ const LoginPage = () => {
           placeholder="Password"
           className="border mx-2 px-2"
         />
-        <button className="border mx-2 px-2">Log in</button>
+        <button onClick={login} className="border mx-2 px-2">Log in</button>
       </form>
 
       <div className="mt-5">
