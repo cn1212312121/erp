@@ -8,6 +8,9 @@ const Register = () => {
     <div>
       <TitleText title={"สมัครสมาชิก"} />
       <div>
+         name,username,password,phone
+      </div>
+      <div>
         เป็นสมาชิกอยู่แล้ว{" "}
         <Link href={partRoute.LOGIN} className="underline text-blue-500">
           เข้าสู่ระบบ
