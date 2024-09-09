@@ -1,3 +1,4 @@
+import { UserModel } from "@/models/UserModel";
 import partRoute from "@/utils/partRoute";
 import Link from "next/link";
 import React from "react";
@@ -9,7 +10,7 @@ const Users = async () => {
   await delay(1000);
   return (
     <div>
-      {res.users.map((u: any) => (
+      {res.users.map((u: UserModel) => (
         <div key={u.id}>
           <Link
             href={`${partRoute.USERS}/${u.id}`}

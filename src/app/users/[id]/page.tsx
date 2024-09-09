@@ -1,3 +1,4 @@
+import { UserModel } from "@/models/UserModel";
 import partRoute from "@/utils/partRoute";
 import Link from "next/link";
 import React from "react";
@@ -10,7 +11,7 @@ const UserPage = async ({ params }: Props) => {
   const { id } = params;
   const url = `https://dummyjson.com/users/${id}`;
   const data = await fetch(url);
-  const res = await data.json();
+  const res: UserModel = await data.json();
   return (
     <div>
       <div>
