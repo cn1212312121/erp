@@ -3,7 +3,7 @@ import partRoute from "@/utils/partRoute";
 import Link from "next/link";
 import React from "react";
 
-const Register = () => {
+const RegisterPage  = () => {
   return (
     <div>
       <TitleText title={"สมัครสมาชิก"} />
@@ -20,4 +20,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterPage ;

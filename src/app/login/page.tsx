@@ -3,7 +3,7 @@ import partRoute from "@/utils/partRoute";
 import Link from "next/link";
 import React from "react";
 
-const Login = () => {
+const LoginPage = () => {
   return (
     <div>
       <form action="">
@@ -32,4 +32,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;
