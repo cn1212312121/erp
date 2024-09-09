@@ -1,3 +1,4 @@
+import TitleText from "@/components/TitleText";
 import partRoute from "@/utils/partRoute";
 import Link from "next/link";
 import React from "react";
@@ -6,7 +7,7 @@ const Login = () => {
   return (
     <div>
       <form action="">
-        <h3 className="mb-3 font-bold text-2xl">ลอกอิน</h3>
+        <TitleText title={"เข้าสู่ระบบ"} textSize="text-9xl" />
 
         <input
           type="text"
