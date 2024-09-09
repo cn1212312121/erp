@@ -1,15 +1,19 @@
-import Link from 'next/link'
-import React from 'react'
+import partRoute from "@/utils/partRoute";
+import Link from "next/link";
+import React from "react";
 
-type Props = {}
-
-const Register = (props: Props) => {
+const Register = () => {
   return (
     <div>
-        <h1>register</h1>
-        <Link href={"/"}>หน้าหลัก</Link>
+      <h3>สมัครสมาชิก</h3>
+      <div>
+        เป็นสมาชิกอยู่แล้ว{" "}
+        <Link href={partRoute.LOGIN} className="underline text-blue-500">
+          เข้าสู่ระบบ
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
