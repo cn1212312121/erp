@@ -21,7 +21,10 @@ const UserPage = async ({ params }: Props) => {
   return (
     <div>
       <div>
-        <Link href={partRoute.USERS}>{`< ย้อนกลับ`}</Link>
+        <Link
+          href={partRoute.USERS}
+          className="underline text-blue-500 mb-2"
+        >{`< ย้อนกลับ`}</Link>
       </div>
       <div>
         {res.maidenName} {res.firstName} {res.lastName}
