@@ -51,7 +51,7 @@ export default function RootLayout({
             เข้าสู่ระบบ
           </Link>
         </div>
-        <div className="p-3 container">{children}</div>
+        <div className="p-3 flex justify-center">{children}</div>
       </body>
     </html>
   );
