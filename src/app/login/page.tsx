@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div>
       <form action="">
-        <h3 className="mb-3 font-bold text-2xl">Log in</h3>
+        <h3 className="mb-3 font-bold text-2xl">ลอกอิน</h3>
 
         <input
           type="text"

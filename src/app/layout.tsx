@@ -40,6 +40,7 @@ export default function RootLayout({
           <Link className="me-1" href={partRoute.CONTACT}>
             ติดต่อเรา
           </Link>
+
           <Link className="me-1" href={partRoute.REGISTER}>
             สมัครสมาชิก
           </Link>
