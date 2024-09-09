@@ -34,6 +34,9 @@ export default function RootLayout({
           <Link className="me-1" href={partRoute.HOME}>
             หน้าหลัก
           </Link>
+          <Link className="me-1" href={partRoute.USERS}>
+            Users
+          </Link>
           <Link className="me-1" href={partRoute.ABOUT}>
             เกี่ยวกับเรา
           </Link>
@@ -48,7 +51,7 @@ export default function RootLayout({
             เข้าสู่ระบบ
           </Link>
         </div>
-        <div className="text-center mt-3">{children}</div>
+        <div className="p-3 container">{children}</div>
       </body>
     </html>
   );

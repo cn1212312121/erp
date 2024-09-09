@@ -4,4 +4,5 @@ export default {
   REGISTER: "/register",
   CONTACT: "/contact",
   ABOUT: "/about",
+  USERS: "/users",
 };
