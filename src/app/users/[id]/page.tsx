@@ -1,5 +1,6 @@
 import { UserModel } from "@/models/UserModel";
 import partRoute from "@/utils/partRoute";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -27,8 +28,19 @@ const UserPage = async ({ params }: Props) => {
         >{`< ย้อนกลับ`}</Link>
       </div>
       <div>
-        {res.maidenName} {res.firstName} {res.lastName}
+        <Image
+          src={res.image}
+          alt="Description of the image" // ควรกำหนดข้อความที่อธิบายภาพเพื่อการเข้าถึง
+          width={500} // ระบุขนาดกว้างของภาพ (ใน pixels)
+          height={300} // ระบุขนาดสูงของภาพ (ใน pixels)
+          layout="responsive" // ใช้ layout "responsive" เพื่อให้รูปภาพมีขนาดตามสัดส่วน
+        />
       </div>
+      <div>
+        ชื่อ-สกุล: {res.maidenName} {res.firstName} {res.lastName} เพศ: {res.gender}
+      </div>
+      <div>เบอร์โทรศัพท์: {res.phone}</div>
+      <div>Email: {res.email}</div>
     </div>
   );
 };
