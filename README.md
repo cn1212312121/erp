@@ -8,4 +8,6 @@
 
 
 <p>tCARTEZKVjtDp</p>
- 
+
+<p>Server PHP</p>
+<p>php -S localhost:8000</p> 
